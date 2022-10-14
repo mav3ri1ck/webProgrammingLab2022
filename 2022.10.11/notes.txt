@@ -1,0 +1,50 @@
+Image File Format
+
+Format types:
+    - raster formats(eg BMP, JPEG/JPG, GIF, PNG, TIFF)
+    - vector formats(eg SVG)
+
+
+File Compression
+    - uncompressed (bimp)
+    - Lossless Compression (e.g. GIF, PNG)
+    - Lossy Compression (eg JPEG/JPG
+
+File formats suitable for Web Pages:
+    - JPEG/JPG
+    - GIF
+    - PNG
+
+
+JPEG/JPG (Joint Photographic Experts Group)
+    - uses lossy Compression
+    - amount of Compression can be varied based on the reqd app. type
+    - compressed images are stored in JFIF(JPEG File Interchange Format) file format supports 8-bit grayscale,
+      and 24-bit (8bit pre channel)
+
+GIF
+    - supports only 256colors (8bit palette)
+    - lossless Compression
+    - animation capabilities
+    - transparency
+    - mostly suited for logos, icons, etc
+
+PNG
+    - free and open source format
+    - supports 256colors, 24-bit color(16M colors) and 48bit colors with/out transparency
+    - lossless
+    - animated formats derived from png are MNG and APNG
+    - high quality illustrations
+
+TIFF
+    - easily extendable
+    - either lossless or lossy
+    - popular in the professional printing business
+    - can handle device specific color spaces (eg CYMK)
+
+
+Questions
+1. Create a web page to show how to load a html document in an iFrame, when the user click on a link(i.e. iFrame as the target of the link)
+2. Create a Web Page to show how ot play a youtube video in the page
+3. Create a web page to play a video file in the page
+4. Create a web page to show how to include a favicon

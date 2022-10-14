@@ -1,0 +1,41 @@
+IFrames
+->  Load a part of a window inside the browser
+->  Input = what file to load?
+->  can load a youtube video using iframe
+->  <iframe src=""></iframe>
+->  src="https://www.youtube.com/embed/{id}"
+->  id u get from youtube video ?v= part
+
+
+Image Map
+->  the parts of an image can be connected to different hrefs
+->  map different parts of image to different anchors
+->  <img src="pix/google_wikipedia.png" alt="Google Wikipedia Logos" usemap="#gw">
+->  we get coords from the image by using image editor, or, use any css/html editor and draw the shapes in place
+->  <map name="gw">
+        <!-- from image we got the coords for google logo as [(0,0) & (544, 184)] -->
+        <area shape="rect" coords="0 0 544 184" href="https://www.google.com" alt="Google">
+        <!-- from image we got the coords for wikipedia logo as [(545,0) & (744, 184)] -->
+        <area shape="rect" coords="545 0 744 184" href="https://en.wikipedia.org" alt="Wikipedia">
+    </map>
+
+
+Audio & video
+->  controls gives the play pause option
+->  <audio controls>
+        <!-- <source src="flute.m4a" type="video/mp4"> -->
+    </audio>
+->  
+->  
+
+Redirect
+->  "refresh" makes it "redirect"
+->  
+
+Semantic elements in HTML 5
+->  w3schools semantic elements
+->  give meaning, no special function, just for ease of understanding.
+->  example <article>, <header>, <section>, <nav>, <details>, <aside>, <form> etc.
+->  used in place of doing {<div id="nav"></div>}
+->  
+->  non-semantic => <div>, <span>, and almost everything else

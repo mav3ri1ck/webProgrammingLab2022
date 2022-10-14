@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>23.09.2022</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="03;url=https://www.google.com">
+
+
+</head>
+<body>
+    <h1>IFrame</h1>
+    <iframe src="base.html"></iframe>
+    <br>
+    <br>
+
+    <h1>Image Map</h1>
+    <!-- <img src="pix/google_wikipedia.png" alt="Google Wikipedia Logos" usemap=""> -->
+    <img src="google_logo.png" alt="Google Wikipedia Logos" usemap="#gw">
+    <map name="gw">
+        <!-- from image we got the coords for google logo as [(0,0) & (544, 184)] -->
+        <area shape="rect" coords="0 0 250 184" href="https://www.google.com" alt="Google">
+        <!-- from image we got the coords for wikipedia logo as [(545,0) & (744, 184)] -->
+        <area shape="rect" coords="251 0 600 184" href="https://en.wikipedia.org" alt="Wikipedia">
+    </map>
+    <br>
+    <br>
+
+
+    <h1>Audio</h1>
+    <audio controls>
+        <!-- <source src="flute.m4a" type="video/mp4"> -->
+        <source src="song.mp3" type="audio/mp3">
+    </audio>
+    <br><br>
+
+
+    <h1>Video</h1>
+    <video controls>
+        <!-- <source src="flute.m4a" type="video/mp4"> -->
+        <source src="video.mp4" type="video/mp4">
+    </video>
+    <br><br>
+
+
+</body>
+</html>
