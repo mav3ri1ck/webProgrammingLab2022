@@ -1,0 +1,14 @@
+# Introduction to CSS
+- What is CSS?
+- Why use CSS?
+
+### Ways to include styling information in HTML(i.e. different ways of using CSS)
+- Inline
+- Internal
+- External CSS File
+
+
+### Syntax
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
