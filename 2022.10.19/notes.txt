@@ -1,0 +1,4 @@
+## Generic Elements
+    - <div> (block level)
+    - <span> (inline)
+
