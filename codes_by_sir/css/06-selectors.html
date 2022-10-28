@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>CSS Selectors</title>
+      <meta charset="utf-8">
+<style>
+h1 {
+   color: red;
+}
+
+.emph {
+   font-style: italic;
+}
+
+.warn {
+   color: red;
+}
+
+a {
+   color: teal;
+   text-decoration: none;
+}
+
+a:hover {
+   color: white;
+   background-color: teal;
+}
+
+p.atcenter {
+   text-align: center;
+}
+
+h1, h2, h3 {
+   background-color: yellow;
+}
+
+* {
+   color: blue;
+}
+</style>
+   </head>
+<body>
+   <h1>Header 1</h1>
+
+   <h2 class="emph">Emph Text</h2>
+
+   <h2 id="warn">Warn Text</h2>
+
+   <h2 class="emph warn">Emph Warn Text</h2>
+
+   <a href="x">Some Link</a>
+
+   <p class="atcenter">Some Text</p>
+   <h1 class="atcenter">Center H1</h1>
+</body>
+</html>
+

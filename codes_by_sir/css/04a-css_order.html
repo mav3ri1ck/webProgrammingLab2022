@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>CSS Inclusion Order</title>
+      <meta charset="utf-8">
+<style>
+h1 {
+   color: blue;
+}
+</style>
+      <link rel="stylesheet" href="style.css">
+      <!-- since external stylesheet is included after the internal one, the
+         non-uniqe declarations of external stylesheet will override the
+         internal declarations
+      -->
+   </head>
+   <body>
+      <h1 style="color: red;">Hello, CSS!</h1>
+      <!-- however, the inline styles always have the highest priority -->
+   </body>
+</html>
+
