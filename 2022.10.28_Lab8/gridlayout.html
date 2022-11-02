@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Layout</title>
+    <style>
+        * {
+            border: 1px solid;
+            font-size: 32px;
+            text-align: center;
+        }
+        .content1 {
+            grid-area: header;
+        }
+        .content2 {
+            grid-area: menu;
+        }
+        .content3 {
+            grid-area: main;
+        }
+        .content4 {
+            grid-area: footer;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas: 
+                'header header header'
+                'menu main main'
+                'footer footer footer';
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="content1">
+            Header
+        </div>
+        <div class="content2">
+            Menu
+        </div>
+        <div class="content3">
+            Main
+        </div>
+        <div class="content4">
+            Footer
+        </div>
+    </div>
+</body>
+</html>
