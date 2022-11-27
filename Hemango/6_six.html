@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>selectors</title>
+	<meta charset= "utf-8">
+</head>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+		
+	.color_name{
+            background-color: lightgrey;
+	    color: blue;
+	}
+	.rgb{
+		color: rgb(60, 179, 113);
+		background-color:rgb(255, 165, 0);
+	}
+	.rgba{
+		color: rgba(225,99,71,0.5);
+		background-color: rgba(90, 90, 90,0.2);
+	}
+	.Hex{
+		color: #fff367;
+		background-color: #0000ff;
+	}
+	.HSL{
+		background-color: hsl(0,0%,0%);
+		color : hsl(0,100%,100%);
+	}
+	.HSLA{
+		background-color : hsla(170,100%,50%,0.2);
+		color : hsla(0,0%,0%,1);
+	}
+
+	.custom-font {
+            font-family: 'Tahoma';
+            font-style: italic;
+            font-weight: 100;
+            font-size: 18px;
+        }
+
+        .web-font {
+            font-family: 'Fasthand';
+        }
+</style>
+<body>
+	<p class="color_name">Using color name </p>
+	<p class="rgb"> Using RGB </p>
+	<p class="rgba">Using RGBA </p>
+	<p class="Hex">Using Hex </p>
+	<p class="HSL">Using HSL </p>
+	<p class="HSLA">Using HSLA </p>
+	<br>
+	<h1> Custom Fonts and Web Fonts </h1>
+	<p class="custom-font">This text uses some common font properties that have been specified in the css.</p>
+    	<h1 class="web-font">Heading Using Web Font</h1>
+
+</body>
+</html>

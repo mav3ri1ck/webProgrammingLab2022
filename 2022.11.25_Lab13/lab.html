@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>25.11.2022</title>
+</head>
+<body>
+    <h1>Simple Form</h1>
+    <form id="theForm" action="" method="post" onsubmit="return false;">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <br><br>
+        <label for="cardNumber">Card Number</label>
+        <input type="text" name="cardNumber" id="cardNumber">
+        <br><br>
+        <label for="expiryDate"></label>
+        <input type="text" maxlength="2" name="expiryMonth" id="expMonth" placeholder="Month" style="width: 40px;"> /
+        <input type="text" maxlength="2" name="expiryYear" id="expYear" placeholder="Year"style="width: 40px;">
+        <button onclick="validate();">Submit</button>
+    </form>
+    <script>
+        function validate() {
+            name = document.getElementById("name").value;
+            cardNumber = document.getElementById("cardNumber").value;
+            expMonth = parseInt(document.getElementById("expMonth").value);
+            expYear = parseInt(document.getElementById("expYear").value);
+            // console.log(name);
+            // console.log(cardNumber);
+            // console.log(expMonth);
+            // console.log(expYear);
+            // console.log(cardNumber.length)
+
+            if(name=="") {
+                alert("Name cannot be blank");
+            }
+            else {
+                if(cardNumber.length != 16) {
+                    alert("Card Number length should be 16");
+                }
+                else {
+                    if (expMonth < 1 || expMonth > 12) {
+                        alert("Invalid Month!");
+                    }
+                    else {
+                        document.getElementById("theForm").submit();
+                        alert("Form Submission Successful.");
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

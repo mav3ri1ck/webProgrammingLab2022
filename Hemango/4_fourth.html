@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+	<title>Form </title>
+	<meta charset="utf-8"> 
+</head>
+<body>
+	<h1> Form </h1>
+	<fieldset>
+		<legend> Biodata </legend>
+		<label for="name"> Name: </label>
+		<input type="text" id="name" name="name"><br>
+		<label for="DOB">Date of Birth:</label>
+		<input type="date" id="DOB" name="DOB"><br>
+		<label for="myfile"> Select the file: </label>
+		<input type="file" id="myfile" name="myfile"><br>
+                <label for="favcolor">Choose color:</label>
+		<input type="color" id="favcolor" name="favcolor" value="#fff000"><br>
+
+		<label for="browser">Choose your specialization from the list:</label>
+		<input list="browsers" name="browser" id="browser">
+		<datalist id="browsers">
+			<option value="AI/ML">
+			<option value="Full Stack Web Dev">
+			<option value="Software Development">
+			<option value="Data Engineering">
+		</datalist>
+		<br>
+		<label for="state">Choose a region:</label>
+		<select  name="state" id="state">
+			<optgroup label="North-East India">
+				<option value="Assam">Assam</option>
+				<option value="Meghalaya">Meghalaya</option>
+			</optgroup>
+			<optgroup label="North India">
+				<option value="Punjab">Punjab</option>
+				<option value="Delhi">Delhi</option>
+			</optgroup>
+		</select>
+
+		<h1> Calculator</h1>
+		 <form action="" method="get">
+			<input type="text" name="" maxlength="10">
+			<input type="text" name="" maxlength="10"><br><br>    
+			<input type="text" name="" readonly><br><br>
+			<button type="reset">AC</button>
+			<button>+</button>
+			<button>-</button>
+     			<button>*</button>
+			<button>/</button>
+		 </form>
+
+</body>
+</html>
+

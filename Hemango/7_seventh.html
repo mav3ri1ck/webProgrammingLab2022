@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methods</title>
+</head>
+
+<body>
+    <h1>Array Methods</h1>
+    <div id="display">
+
+    </div>
+    <div>
+        <h1>Array concatenation</h1>
+        <p id="container1"></p>
+        <h1>Array join</h1>
+        <p id="container2"></p>
+        <h1>Array indexOf</h1>
+        <p id="container3"></p>
+        <h1>Array Sort</h1>
+        <p id="container4"></p>
+        <h1>Array Push and Pop</h1>
+        <p id="container5"> </p>
+        <p id="container6"></p>
+    </div>
+
+    <div class="character">
+        <h1>Strings</h1>
+        <p id="container7"></p>
+        <p id="container8"></p>
+        <p id="container9"></p>
+        <p id="container10"></p>
+    </div>
+
+    <div class="date">
+        <h1>Date</h1>
+        <p id="time"></p>
+        <p id="month"></p>
+        <p id="date"></p>
+
+    </div>
+
+    <script>
+        let arr1 = [1, 34, 78, 6, 44];
+        let arr2 = [12, 3, 78, 100, 414];
+
+
+        let concatenation = arr1.concat(arr2);
+        let joining = arr1.join(", ");
+        let index = arr1.indexOf(78);
+        let sorting = arr1.sort();
+        let insert = arr1.push(1000);
+        let remove = arr2.pop();
+
+
+        document.getElementById('display').innerHTML = `1st Array:${arr1} <br>      2nd Array: ${arr2}`;
+        document.getElementById('container1').innerHTML = concatenation;
+        document.getElementById('container2').innerHTML = joining;
+        document.getElementById('container3').innerHTML = index;
+        document.getElementById('container4').innerHTML = sorting;
+        document.getElementById('container5').innerHTML = `Array after pushing 1000:  ${arr1}`;
+        document.getElementById('container6').innerHTML = `Array after popping :  ${arr2}`;
+
+        let a = "Banana";
+        let character = a.charAt(3);
+        let replacing = a.replace('a', 't');
+        let matching = a.match("nana")
+
+        document.getElementById('container7').innerHTML = character;
+        document.getElementById('container8').innerHTML = replacing;
+        document.getElementById('container9').innerHTML = matching;
+
+        let today = new Date();
+        document.getElementById('date').innerHTML = "Today's date is: " + today.getDate();
+        document.getElementById('month').innerHTML = "Month is: " + today.getMonth();
+        document.getElementById('time').innerHTML = "Time is: " + today.getHours() + ":" + today.getMinutes();
+    </script>
+</body>
+
+</html>

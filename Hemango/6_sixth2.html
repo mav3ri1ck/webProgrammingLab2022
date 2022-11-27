@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If a number is positive,negative or zero</title> 
+</head>
+<body>
+    <p id="number"></p>
+    <script>
+        let num = prompt("Enter the number");
+        if(num > 0)
+            document.getElementById("number").innerHTML = "Positive";
+        else if(num < 0)
+            document.getElementById("number").innerHTML = "Negative";
+        else
+            document.getElementById("number").innerHTML = "Zero";
+        
+    </script>
+</body>
+</html>
