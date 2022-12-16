@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Document</title>
+    <script src="lab.js"></script>
+
+</head>
+<body onload="disableButton();">
+    
+    <div class="back">
+    <div class="con">
+    <form method="post" id="form1">
+        <h1>Registration Form</h1>
+        <label>Username</label>
+        <input type="text" id="in1" onkeyup="validateForm();"><br><br>
+        <label>Password</label>
+        <input type="password" id="in2" onkeyup="validateForm();"><br><br>
+        <label>Retype Password</label>
+        <input type="password" id="in3" onkeyup="validateForm();"><br>
+        <br><button type="submit" id="submitBTN" onclick="checkPassword(event);" disabled>Submit</button>
+        <button type="reset" id="ResetBTN" onclick="disableButton();">Reset</button>
+    </form>
+    </div>
+    </div>
+</body>
+</html>
