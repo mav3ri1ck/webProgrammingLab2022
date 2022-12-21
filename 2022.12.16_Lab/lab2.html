@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lab2.css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="back">
+        <div class="con">
+            <form method="post">
+                <h1 id="head">Registration Form</h1>
+                <label>Username</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="in1" class="inp" onkeyup="validateForm();"><br><br>
+                <label>Password</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="password" id="in2" class="inp" onkeyup="validateForm();"><br><br>
+                <label>Retype Password</label>&nbsp;&nbsp;
+                <input type="password" id="in3" class="inp" onkeyup="validateForm();"><br>
+                <br><button type="submit" id="submitBTN" class="btn" disabled>Submit</button>
+                <button type="reset" id="ResetBTN"  class="btn" onclick="disableButton();">Reset</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function enableButton() {
+            document.getElementById("submitBTN").disabled = false;
+        }
+
+        function disableButton() {
+            document.getElementById("submitBTN").disabled = true;
+        }
+
+        function validateForm() {
+            let userId = document.getElementById("in1").value.trim();
+            let pass1 = document.getElementById("in2").value.trim();
+            let pass2 = document.getElementById("in3").value.trim();
+
+            if (userId === "" || pass1 === "" || pass2 === "") {
+                disableButton();
+            }
+            else {
+                enableButton();
+            }
+        }
+        
+
+    </script>
+</body>
+
+</html>
